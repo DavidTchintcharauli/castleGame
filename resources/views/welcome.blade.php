@@ -18,37 +18,47 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #f0f0f0; /* Light Gray color */
         }
 
         .castle {
-            width: 600px;
+            width: 450px;
             height: 600px;
-            background-color: #c2b280;
-            border: 5px solid #8b4513;
-            position: relative;
+            background-color: #c2b280; /* Sandstone color */
+            border: 5px solid #8b4513; /* SaddleBrown color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
         }
 
         .welcome-text {
-            position: absolute;
-            top: 20px;
-            left: 0;
-            right: 0;
-            font-size: 18px;
-            color: #8b4513;
+            font-family: 'figtree', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #8b4513; /* SaddleBrown color */
+            margin-bottom: 20px;
         }
 
         .btn {
-            padding: 10px 20px;
-            background-color: #4caf50;
+            padding: 12px 24px;
+            margin-top: 30px;
+            background-color: #4caf50; /* Green color */
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             cursor: pointer;
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+        }
+
+        .btn:hover {
+            background-color: #388e3c; /* Dark Green color */
+            transform: translateY(-3px); /* Button hover effect */
         }
     </style>
 </head>
