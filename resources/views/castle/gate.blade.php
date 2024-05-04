@@ -23,9 +23,7 @@
             width: 450px;
             height: 600px;
             background-color: #c2b280;
-            /* Sandstone color */
             border: 5px solid #8b4513;
-            /* SaddleBrown color */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -33,9 +31,7 @@
             text-align: center;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            /* Shadow effect */
             position: relative;
-            /* Needed for absolute positioning */
         }
 
         .title {

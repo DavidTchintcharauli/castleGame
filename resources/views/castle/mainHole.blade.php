@@ -22,6 +22,14 @@
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
         }
 
         .title {
@@ -67,6 +75,38 @@
             font-size: 16px;
             color: #fff; /* White color */
         }
+
+        .square {
+            width: 450px;
+            height: 600px;
+            background-color: #c2b280;
+            border: 5px solid #8b4513;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .go-back-btn {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -100,6 +140,14 @@
             <div class="room">
                 <div class="room-text">Queen's Chamber</div>
             </div>
+            <div class="go-back-btn">
+                <button class="btn" onclick="goBack()">Go back</button>
+            </div>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
         </div>
     </div>
 </body>
