@@ -88,6 +88,7 @@
         .btn:hover {
             background-color: #555;
             transform: translateY(-3px);
+            color: rgb(255, 255, 255);
         }
 
         .go-back-btn {

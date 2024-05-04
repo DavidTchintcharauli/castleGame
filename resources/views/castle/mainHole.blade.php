@@ -11,37 +11,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0; /* Light Gray color */
+            background-color: #f0f0f0; 
         }
 
         .main-hole {
             width: 600px;
             padding: 20px;
-            background-color: #c2b280; /* Sandstone color */
-            border: 5px solid #8b4513; /* SaddleBrown color */
+            background-color: #c2b280;
+            border: 5px solid #8b4513; 
             border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             position: relative;
         }
 
         .title {
             font-size: 24px;
             font-weight: bold;
-            color: #8b4513; /* SaddleBrown color */
+            color: #8b4513; 
             margin-bottom: 20px;
         }
 
         .description {
             font-size: 16px;
-            color: #333; /* Dark Gray color */
+            color: #333; 
             margin-bottom: 30px;
             line-height: 1.6;
         }
@@ -50,62 +43,60 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 20px;
         }
 
         .room {
             width: 150px;
             height: 150px;
             margin: 10px;
-            background-color: #4682b4; /* SteelBlue color */
-            border: 5px solid #1e90ff; /* DodgerBlue color */
+            background-color: #4682b4; 
+            border: 5px solid #1e90ff; 
             border-radius: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .room:hover {
-            background-color: #87ceeb; /* LightSkyBlue color */
+            background-color: #87ceeb; 
+            transform: scale(1.05);
         }
 
         .room-text {
             font-size: 16px;
-            color: #fff; /* White color */
+            color: #fff; 
+            transition: color 0.3s;
         }
 
-        .square {
-            width: 450px;
-            height: 600px;
-            background-color: #c2b280;
-            border: 5px solid #8b4513;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            position: relative;
-        }
-
-        .btn {
-            padding: 12px 24px;
-            margin: 10px;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        .room:hover .room-text {
+            color: #000; 
         }
 
         .go-back-btn {
             position: absolute;
-            bottom: 10px;
-            right: 10px;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background-color: white; 
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        .btn:hover {
+            background-color: #555;
+            transform: translateY(-3px);
+            color: white;
         }
     </style>
 </head>
@@ -140,15 +131,15 @@
             <div class="room">
                 <div class="room-text">Queen's Chamber</div>
             </div>
-            <div class="go-back-btn">
-                <button class="btn" onclick="goBack()">Go back</button>
-            </div>
-            <script>
-                function goBack() {
-                    window.history.back();
-                }
-            </script>
         </div>
+        <div class="go-back-btn">
+            <button class="btn" onclick="goBack()">Go back</button>
+        </div>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
     </div>
 </body>
 </html>
