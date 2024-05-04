@@ -57,6 +57,7 @@
     <div class="castle">
         <div class="welcome-text">Welcome to our Castle</div>
         <button class="btn">Click Me</button>
+        <a href="{{ url('/gate') }}" class="btn">Click Me</a>
     </div>
 </body>
 
