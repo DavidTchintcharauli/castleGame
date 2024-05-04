@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Redirect;
 
 class CastleController extends Controller
 {
+    public function showWelcome()
+    {
+        return view('welcome');
+    }
+
     public function showGate()
     {
         return view('castle.gate');
@@ -17,8 +22,8 @@ class CastleController extends Controller
         return view('castle.prison');
     }
 
-    public function showWelcome()
+    public function showMainHole()
     {
-        return view('welcome');
+        return view('castle.mainHole');
     }
 }

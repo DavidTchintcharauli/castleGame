@@ -108,12 +108,18 @@
         <div class="description">I am the guard of this castle. First, tell me who you are, and then I will let you into
             the castle.</div>
         <div class="btn-container">
-            <button class="btn btn-soldier">Soldier</button>
+            <form action="{{ route('mainHole') }}">
+                <button type="submit" class="btn btn-soldier">Soldier</button>
+            </form>
             <form action="{{ route('prison') }}">
                 <button type="submit" class="btn btn-thief">Thief</button>
             </form>
-            <button class="btn btn-citizen">Citizen</button>
-            <button class="btn btn-spy">Spy</button>
+            <form action="{{ route('mainHole') }}">
+                <button type="submit" class="btn btn-citizen">Citizen</button>
+            </form>
+            <form action="{{ route('mainHole') }}">
+                <button type="submit" class="btn btn-spy">Spy</button>
+            </form>
         </div>
         <div class="go-back-btn">
             <button class="btn" onclick="goBack()">Go back</button>
