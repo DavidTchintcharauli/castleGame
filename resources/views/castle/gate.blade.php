@@ -109,7 +109,9 @@
             the castle.</div>
         <div class="btn-container">
             <button class="btn btn-soldier">Soldier</button>
-            <button class="btn btn-thief">Thief</button>
+            <form action="{{ route('prison') }}">
+                <button type="submit" class="btn btn-thief">Thief</button>
+            </form>
             <button class="btn btn-citizen">Citizen</button>
             <button class="btn btn-spy">Spy</button>
         </div>

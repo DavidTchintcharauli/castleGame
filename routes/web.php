@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/gate', [CastleController::class, 'showGate'])->name('gate');
+Route::get('/prison', [CastleController::class, 'showPrison'])->name('prison');
+Route::get('/', [CastleController::class, 'showWelcome'])->name('welcome');

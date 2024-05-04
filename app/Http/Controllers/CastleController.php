@@ -11,4 +11,14 @@ class CastleController extends Controller
     {
         return view('castle.gate');
     }
+
+    public function showPrison()
+    {
+        return view('castle.prison');
+    }
+
+    public function showWelcome()
+    {
+        return view('welcome');
+    }
 }
