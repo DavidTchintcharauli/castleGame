@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <style>
         body,
         html {
-            background-color: #f0f0f0; /* Light Gray color */
+            background-color: #f0f0f0;
+            /* Light Gray color */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -20,16 +22,20 @@
         .square {
             width: 450px;
             height: 600px;
-            background-color: #c2b280; /* Sandstone color */
-            border: 5px solid #8b4513; /* SaddleBrown color */
+            background-color: #c2b280;
+            /* Sandstone color */
+            border: 5px solid #8b4513;
+            /* SaddleBrown color */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
             border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
-            position: relative; /* Needed for absolute positioning */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            /* Shadow effect */
+            position: relative;
+            /* Needed for absolute positioning */
         }
 
         .title {
@@ -87,6 +93,7 @@
             background-color: #555;
             transform: translateY(-3px);
         }
+
         .go-back-btn {
             position: absolute;
             bottom: 10px;
@@ -94,10 +101,12 @@
         }
     </style>
 </head>
+
 <body>
     <div class="square">
         <div class="title">Welcome to Castle Game</div>
-        <div class="description">I am the guard of this castle. First, tell me who you are, and then I will let you into the castle.</div>
+        <div class="description">I am the guard of this castle. First, tell me who you are, and then I will let you into
+            the castle.</div>
         <div class="btn-container">
             <button class="btn btn-soldier">Soldier</button>
             <button class="btn btn-thief">Thief</button>
@@ -105,8 +114,14 @@
             <button class="btn btn-spy">Spy</button>
         </div>
         <div class="go-back-btn">
-            <button class="btn">Go back</button>
+            <button class="btn" onclick="goBack()">Go back</button>
         </div>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
     </div>
 </body>
+
 </html>
